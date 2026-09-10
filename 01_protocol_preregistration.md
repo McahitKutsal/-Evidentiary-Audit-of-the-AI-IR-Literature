@@ -22,7 +22,7 @@ RQ4. Which three claims are most central by supporting citation weight, and what
 
 H1. Predictive and causal claims outnumber descriptive and conceptual claims in the corpus.
 H2. Among W3 claims, at least one declared-forecast indicator present in the originating text is absent in the citing text in more than half of cases.
-H3. Within publication year, the association between citation rank and share of adequately fitted claims is not positive.
+H3. Within publication year, the association between citation standing and share of adequately fitted claims is not positive, where citation standing is the percentile rank defined in §10 (0 = most cited, 1 = least cited). Under that coding, a positive association means the more cited articles are the less adequately warranted ones; H3 conjectures that this is not the case.
 
 Null or opposite results for H2 and H3 are reported as findings, not as failures (Manifesto §13).
 
@@ -69,28 +69,45 @@ Extraction scope: all claims in abstract, introduction, conclusion; body claims 
 | Scope conditions stated | claim (predictive/causal-future) | 0/1 |
 | Conjectural status signalled | claim | 0/1 |
 | Falsifier identified | claim | 0/1 |
+| Scope conditions, originating text | claim (W3) | 0/1/unknown |
+| Conjectural status, originating text | claim (W3) | 0/1/unknown |
+| Falsifier, originating text | claim (W3) | 0/1/unknown |
+| Analogy developed over a full section | claim (predictive, W4, P2–P4) | 0/1 |
+| Cited source peer reviewed | claim (W3) | 0/1 |
+| Secondary claim type | claim | claim type or none |
 | Canonical claim ID | claim | ID or none |
 | Citation valence (for W3) | claim | supporting, neutral, critical |
+
+The three originating-text indicators are recorded for every W3 claim that is itself predictive or causal-future, by retrieving the cited source and coding the claim as it appears there. They are the input to RQ3 and H2; without them the transmission comparison cannot be computed. Where the source is not retrievable the value is "unknown" and the claim is excluded from the paired comparison, with the number excluded reported.
+
+Indicators are recorded as the numbers 1 and 0, or the text "NA" where the variable does not apply. They must not be stored as text digits: the fit formula and the analysis script both read them numerically.
 
 Fit is assigned by the matrix in Appendix A of the article. Coders record inputs; fit is computed, then reviewed. Coder override of computed fit is permitted only with a logged reason.
 
 ## 9. Reliability
 
 Double coding: minimum 25% of articles, random, fixed seed.
+
+Reconciliation pass: because coders extract claims independently before coding them, the two coders will not produce matching claim identifiers on their own. Before variable coding, a reconciliation pass assigns a shared identifier to every segment that both coders identified as a claim. Segments identified by only one coder are recorded for the unitising statistic and excluded from variable α. Without this pass no variable α can be computed at all.
+
 Statistic: Krippendorff's α (nominal) per variable; unitising α for claim boundaries.
+
 Threshold: α ≥ 0.70. Below threshold: scheme revised, revision logged, affected variable re-coded in full.
-Disagreement rule after discussion: fit → partial; other variables → logged and adjudicated by a third reader.
+
+A variable with no double-coded units is reported as "not computed". This is not a pass. The threshold has not been applied to it and no reliability claim is made for it.
+
+Disagreement rule after discussion: fit → partial; other variables → logged and adjudicated by a third reader. Claims that reach partial by this rule rather than by the matrix are counted separately and reported, because partial is also a substantive value and the two must not be conflated.
 
 ## 10. Citation data
 
 Source: [WoS / Scopus / Google Scholar], retrieved on [ ].
-Measures: raw count; citations per year; within-year rank.
+Measures: raw count; citations per year; within-year percentile rank of citations per year, computed with 0 assigned to the most cited article of that publication year and 1 to the least cited. Percentile rather than ordinal rank, so that years with different numbers of articles are on one scale and can be pooled. Every statement about the direction of an association in this protocol and in the article uses this coding.
 Claim centrality: sum of citations-per-year of articles asserting the canonical claim with supporting or neutral valence.
 
 ## 11. Analysis
 
 Descriptive distributions for RQ1 and RQ3.
-RQ2: Spearman ρ between within-year citation rank and article-level share of adequate fit; bootstrapped 95% CI (2,000 resamples); pooled and by year.
+RQ2: Spearman ρ between within-year citation percentile rank (§10) and article-level share of adequate fit; bootstrapped 95% CI (2,000 resamples); pooled and by year. Negative ρ means the more cited articles are the better warranted ones; positive ρ means the reverse.
 RQ3 transmission: paired comparison of indicator presence, originating vs citing text, for W3 claims.
 No inferential test is treated as confirmatory beyond H1–H3.
 

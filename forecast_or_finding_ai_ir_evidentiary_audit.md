@@ -38,11 +38,13 @@ The audit draws on three bodies of work. The first is the object of the audit: p
 
 Pilot reading of the corpus suggests that the substantive literature organises around six recurring claim families. We state this as a pre-coding observation, not as a finding; the coded distribution appears in Section 6. The families are listed here because the coding scheme must be able to classify each of them, and because the candidate claims in Section 7 are drawn from them.
 
+The same hedge covers the warrant characterisations in this section. Each family description below ends with an impression of the kind of grounds its authors typically offer. Those impressions come from reading, not from coding, and several of them are exactly the propositions this article exists to test. Every one of them may be overturned by Section 6.3, and none should be read as a result. We phrase them in the present indicative for readability and mark them here, once, as conjecture rather than repeating the qualifier six times.
+
 **Diffusion and adoption.** The oldest family in the corpus applies established theories of military innovation to AI. The framework of adoption capacity, developed for earlier technologies (Horowitz 2010), is extended to AI in the argument that organisational and financial barriers, not access to algorithms, will determine which states field military AI first (Horowitz 2018; Horowitz 2020). Related work on imitation and reverse engineering in complex weapons systems provides the comparative baseline (Gilli and Gilli 2019). More recent work reframes diffusion in terms of general-purpose technologies and the institutions that spread engineering skills across an economy (Ding 2024). The typical warrant in this family is historical analogy and deduction from an existing framework, with case illustration.
 
 **Strategic stability and escalation.** A second family asks whether AI-enabled sensing, targeting, and decision support destabilise deterrence. The counterforce argument that improvements in accuracy and remote sensing threaten survivable second-strike forces (Lieber and Press 2017) is the anchor for claims about AI and nuclear stability. The special issue edited by Sechser, Narang, and Talmadge (2019) set out to test emerging-technology claims against historical data and reported that effects were conditional and sometimes contradictory. Within it, the Cold War evidence on intra-war escalation cast doubt on technology as an independent driver of escalation (Talmadge 2019). Work on the capability/vulnerability paradox links dependence on networked systems to first-strike incentives (Schneider 2019). Claims about delegation of strategic decisions to machines and the risk of automated escalation form a sub-family (Johnson 2022). Warrants here range from historical case analysis to deduction; this family is where the transition from declared forecast to circulated finding is most consequential, because its claims travel into nuclear policy debates.
 
-**Crisis decision-making and human–machine interaction.** A third family, more recent and more experimental, examines how decision-makers respond to AI-generated advice. Survey experiments on crisis decisions with algorithmic input (Horowitz and Lin-Greenberg 2022) and wargame evidence on remote systems and escalation control (Lin-Greenberg 2022) supply original data. Work on familiarity and trust in military AI (Horowitz et al. 2023) and on the division of labour between machine prediction and human judgment (Goldfarb and Lindsay 2022) belongs here. The warrants are W1 and W2 in the terms of Section 4. This family is the natural site for testing claims that elsewhere circulate on analogy alone, which is why two of the three designs in Section 7 build on it.
+**Crisis decision-making and human–machine interaction.** A third family, more recent and more experimental, examines how decision-makers respond to AI-generated advice. Survey experiments on crisis decisions with algorithmic input (Horowitz and Lin-Greenberg 2022) and wargame evidence on remote systems and escalation control (Lin-Greenberg 2022) supply original data. Work on familiarity and trust in military AI (Horowitz et al. 2023) and on the division of labour between machine prediction and human judgment (Goldfarb and Lindsay 2022) belongs here. This is the one family in which original evidence, W1 and W2 in the terms of Section 4, is prominent, though it is not uniform: the experimental work supplies original data, while the argument about prediction and judgment is conceptual and deductive. This family is the natural site for testing claims that elsewhere circulate on analogy alone, which is why two of the three designs in Section 7 build on it.
 
 **Alliances and multinational operations.** A fourth, smaller family asks how AI affects burden-sharing, interoperability, and coalition decision-making (Lin-Greenberg 2020). Warrants are deductive with case illustration.
 
@@ -67,6 +69,8 @@ IR has no established tradition of systematic review comparable to medicine or p
 ### 2.3 How claims acquire authority
 
 The forecast/finding distinction in Section 3 rests on a mechanism: qualifiers are lost as claims are cited. Research from outside IR documents this mechanism directly.
+
+The closest conceptual antecedent is Latour's (1987) account of modalities. A statement, on his analysis, is accompanied by clauses that point either back toward the conditions under which it was produced or forward, away from them. Strip the backward-pointing clauses across a chain of citations and the statement ceases to be someone's contested proposal and becomes a fact that everyone knows. Our declared forecast is a statement carrying its modalities; our circulated finding is the same statement after they have been removed. We claim no novelty for the mechanism. What we add is a measurement instrument: Latour's account is ethnographic and demonstrated on cases, and it does not yield a rate. The three indicators of Section 4.5 are an attempt to make the presence or absence of modalities countable across a corpus, and to do so in a field with plural epistemologies, where what counts as stripping a qualifier cannot be judged against a single standard. Relatedly, Merton's (1968) Matthew effect supplies the reason to expect that the process is not neutral with respect to which claims travel: citation advantage accrues to the already cited, independently of the grounds on offer. That is the expectation Section 6.6 tests.
 
 Greenberg (2009) constructed the complete citation network for a single biomedical claim and showed how unfounded authority was built through three distortions: citation bias against papers that weakened the claim, amplification by papers that cited it without adding data, and invention, including the conversion of a hypothesis into a fact in later citing texts. The third distortion is the forecast-to-finding transition described in this article. Simulation work shows that publication bias alone can canonise false claims when negative results go unpublished (Nissen et al. 2016), and the broader argument about the fragility of published findings under low prior probability and analytic flexibility (Ioannidis 2005) applies to any field whose foundational claims are rarely tested.
 
@@ -114,7 +118,7 @@ The coding scheme has four components: claim type, warrant type, epistemological
 
 ### 4.1 Claim types
 
-We identify five claim types. The categories are designed to be exhaustive and are mutually exclusive at the level of the individual claim. A residual code is retained for claims that fit none; its frequency is reported, and if it exceeds five percent of claims the scheme is revised under the change-log procedure in Section 5.1.
+We identify five claim types, plus a residual sixth code, "other", for claims that fit none of the five. The six values together are exhaustive. Each claim carries exactly one claim type, so that the distribution in Section 6.2 has one row per claim and its shares sum to one. The frequency of "other" is reported, and if it exceeds five percent of claims the scheme is revised under the change-log procedure in Section 5.1.
 
 **Descriptive claims** assert that something is the case about the world: a state has deployed a system, a capability exists, an actor has adopted a doctrine. Example form: "Country X has integrated machine learning into its intelligence analysis pipeline."
 
@@ -126,7 +130,11 @@ We identify five claim types. The categories are designed to be exhaustive and a
 
 **Normative claims** assert what ought to be done. Example form: "States should agree to a moratorium on autonomous nuclear launch."
 
-Where a sentence contains more than one claim of different types, it is split. Where a causal claim is embedded in a predictive one ("because AI compresses decision time, escalation risk will rise"), both are coded.
+Where a sentence contains more than one claim, it is split into separate claims, each with its own record.
+
+A single claim can still carry two types at once. "Because AI compresses decision time, escalation risk will rise" is one proposition asserting both a causal mechanism and a future consequence; splitting it would misrepresent the author, who advances it as one argument. For these cases the coder records the type that carries the author's assertion as the **claim type** and the other as a **secondary claim type**. Where a claim is both causal and predictive, the predictive type is primary, because it is the temporal reach of the claim that determines which evidentiary standard applies and which declared-forecast indicators are required.
+
+Distributions in Section 6.2 are computed on the primary type only, so that each claim is counted once. The share of claims carrying a secondary type is reported separately, and fit is assessed against the primary type. This is a departure from coding both types symmetrically, which would make the shares in Section 6.2 sum to more than one and would leave the fit matrix without a single row to look up.
 
 ### 4.2 Warrant types
 
@@ -156,20 +164,30 @@ Each article, not each claim, is coded for the author's stated or evident episte
 | P3 | Critical | Seeks to expose structures of power or assumptions; treats evidence as exemplifying |
 | P4 | Theory-building or policy-analytic | Seeks to propose frameworks or options; treats evidence as motivating |
 
-Positioning is coded from the author's own methodological statements where present. Where absent, coders infer positioning from the structure of the argument and record that the inference was made. Articles coded P2, P3, or P4 are not assessed for causal fit under P1 standards. This rule is the single most important safeguard in the design. Applying positivist evidentiary standards to interpretivist or critical work would be a category error, and the audit would fail its own test.
+Positioning is coded from the author's own methodological statements where present. Where absent, coders infer positioning from the structure of the argument and record that the inference was made.
+
+It is worth being exact about where positioning does its work, because it is easy to overstate. Positioning changes a fit value at exactly one point in the matrix: a predictive claim resting on a developed analogy is adequate under P2, P3, and P4 and partial under P1, because framework-building and interpretive work treat a sustained analogy as an argument in itself while neo-positivist work treats it as a substitute for evidence. Everywhere else the matrix is the same under all four codes.
+
+Positioning does most of its work earlier, in classification rather than in scoring. Whether a passage in a critical article asserts a causal claim at all, whether "produces" is meant in a covering-law or a constitutive sense, whether a documented discourse counts as original qualitative evidence: these are decided by the author's own standard, and they determine which row and column the claim lands in. A P3 article claiming that a discourse produces a security logic is coded as a causal claim warranted by W2, and the matrix then returns adequate. Applying positivist evidentiary standards at that upstream step would be a category error, and the audit would fail its own test.
+
+We make this explicit rather than resting on the claim that the design is positioning-relative throughout. It is positioning-relative in classification and at one scoring rule, and a reader is entitled to know which.
 
 ### 4.4 Fit
 
 Fit is a judgment about whether the warrant type is adequate to the claim type, given the article's positioning. The fit matrix in Appendix A states, for each combination, whether the warrant is **adequate**, **partial**, or **inadequate**. Some general rules:
 
-- Under any positioning, a conceptual claim is adequately warranted by W5 or by W2 used illustratively.
-- Under P1, a causal claim requires W1 or W2 for adequate fit. W3 is adequate only if the sub-code shows the cited source carries W1 or W2. W4 alone is partial. W5 alone is partial. W6, W7, and W8 are inadequate for a causal claim presented as a finding.
-- Under P1, a predictive claim with W7 is adequate provided the three declared-forecast indicators (Section 4.5) are present. Without them, W7 is partial.
-- Under P2 and P3, causal language is often used in a constitutive rather than a covering-law sense. Coders apply the author's own standard. A P3 article claiming that a discourse "produces" a security logic is adequately warranted by W2 if the discourse is documented.
-- Under P4, W5 and W4 are adequate for conceptual and predictive claims. Causal claims in P4 articles are coded for fit but flagged, since P4 authors often do not intend them as tested propositions.
-- Normative claims are coded for whether their empirical premises are warranted, not for the normative inference itself.
+The rules below restate the matrix in prose. Where prose and matrix appear to differ, the matrix governs, and the discrepancy is a defect to be logged and corrected rather than a coder's choice.
 
-Fit is coded conservatively. Where coders disagree after discussion, the claim is coded as partial and the disagreement is logged.
+- A conceptual claim is adequately warranted by W1 through W5 or by W7, and partially by W6 or W8. Conceptual work is the one place where declared conjecture is a sufficient warrant on its own.
+- A causal claim is adequately warranted by W1, by W2, or by W3 whose sub-code shows the cited source carries W1 or W2. W3 tracing anywhere else, W4, W5, and W7 are partial. W6 and W8 are inadequate.
+- A predictive claim is adequately warranted by W1, by W2, by W3 tracing to W1 or W2, or by W7 carrying all three declared-forecast indicators. W7 without all three is partial, as are W3 tracing elsewhere, W4, W5, and W6. W8 is inadequate.
+- A descriptive claim is inadequately warranted by W5, because a claim about what is the case is not established by deduction, and by W8.
+- Under P2 and P3, causal language is often used in a constitutive rather than a covering-law sense. Coders apply the author's own standard when deciding whether a passage asserts a causal claim at all, and when identifying the warrant offered. A P3 article claiming that a discourse "produces" a security logic is adequately warranted by W2 if the discourse is documented, which is what the causal row already gives.
+- Under P2, P3, and P4, a predictive claim warranted by a developed analogy is adequate; under P1 it is partial. This is the single fit value that positioning changes.
+- Causal claims in P4 articles are coded for fit on the same rules and additionally flagged, and reported separately.
+- Normative claims are coded on the warrant offered for their empirical premise, using the Normative row of the matrix. The normative inference itself is not assessed.
+
+Fit is coded conservatively. Where coders disagree after discussion, the claim is coded as partial and the disagreement is logged. We note the consequence of that rule in Section 8: it moves disagreement into the middle category, so the partial share absorbs coder uncertainty and the adequate and inadequate shares are, to that extent, conservative estimates.
 
 ### 4.5 Declared-forecast indicators
 
@@ -179,7 +197,11 @@ For every predictive claim and every causal claim about future effects, coders r
 2. **Conjectural status signalled.** The text uses explicit language ("we expect," "it is plausible that," "hypothesis") or structural markers (a hypotheses section, a "future research" framing).
 3. **Falsifier identified.** The text states, in any form, what observation would count against the claim.
 
-A claim with all three indicators is a declared forecast. A claim with none is a circulated finding in the originating text. Intermediate cases are recorded as such. For claims coded W3, the same indicators are recorded for the citing text, allowing us to measure loss of qualifiers in transmission.
+A claim with all three indicators is a declared forecast. A claim with none is a circulated finding. Intermediate cases are recorded as such, as three separate binary fields rather than a composite score, because the pilot suggests the three do not move together.
+
+Measuring transmission requires two readings of the same proposition, and the coding records both. The claim as it appears in the article being coded is the **citing text**, and its three indicators are the fields already described. Where that claim is warranted by W3, the coder retrieves the cited source, locates the proposition as the original author stated it, and records the same three indicators a second time for that **originating text**. The pair is what Table 4 compares; a claim contributes to Table 4 only if both readings exist. Where the cited source cannot be retrieved, the originating indicators are recorded as "unknown" and the claim is excluded from the paired comparison, with the number excluded reported alongside the table.
+
+This is the measurement on which RQ3 and H2 depend, and it is the most labour-intensive part of the coding, since it requires opening every cited source behind a W3 claim rather than reading only the article in hand.
 
 ### 4.6 Worked examples
 
@@ -187,7 +209,7 @@ Two examples show the scheme in use. The first is drawn from the corpus; the pro
 
 *Example 1.* Horowitz and Lin-Greenberg (2022) report survey experiments on how algorithmic advice affects crisis decisions. A representative claim is that the source of a recommendation, human or machine, conditions how decision-makers weigh it. Coding: claim type causal; primary warrant W1; positioning P1; fit adequate. The article states the experimental conditions under which the result holds, which satisfies the scope-condition indicator, and the hypotheses are stated before the results, which satisfies the conjectural-status indicator for the pre-test formulation.
 
-*Example 2 (constructed).* An article positioned as P1 asserts in its introduction that "AI-enabled early warning will shorten the window for human deliberation in nuclear crises," cites two earlier articles, and offers no data of its own. Retrieval shows both cited articles ground the claim in analogy to Cold War early-warning systems. Coding: claim type predictive (with an embedded causal claim, coded separately); primary warrant W3, sub-coded as tracing to W4; positioning P1; fit partial. Declared-forecast indicators: scope conditions absent, conjectural status absent, falsifier absent. The originating claim in the cited articles may have carried all three indicators; if so, the loss is recorded in Table 4.
+*Example 2 (constructed).* An article positioned as P1 asserts in its introduction that "AI-enabled early warning will shorten the window for human deliberation in nuclear crises," cites two earlier articles, and offers no data of its own. Retrieval shows both cited articles ground the claim in analogy to Cold War early-warning systems. Coding: claim type predictive, secondary claim type causal, since the proposition asserts both a mechanism and a future consequence and the predictive reach governs; primary warrant W3, sub-coded as tracing to W4; positioning P1; fit partial. Declared-forecast indicators: scope conditions absent, conjectural status absent, falsifier absent. The originating claim in the cited articles may have carried all three indicators; if so, the loss is recorded in Table 4.
 
 The second example is the pattern the audit is built to detect. It is not an accusation against any article; it is a description of a coding outcome that the scheme must be able to produce reliably.
 
@@ -243,7 +265,7 @@ All findings are reported at the aggregate level. No individual author or articl
 
 ### 6.1 Corpus description
 
-[VERİ: N articles, n claims. Distribution by year, journal, and positioning code. Mean and median claims per article.]
+Table 1 describes the corpus by year of publication and positioning code. [VERİ: N articles, n claims. Distribution by journal. Mean and median claims per article. Share of articles whose positioning was inferred rather than stated.]
 
 Table 1. Corpus by year and positioning.
 
@@ -256,19 +278,55 @@ Table 1. Corpus by year and positioning.
 
 ### 6.2 Claim types
 
-[VERİ: Distribution of n claims across the five types. Share of predictive claims. Share of causal claims. Change over time.]
+Table 2 gives the distribution of claims across the six types, by year of publication. [VERİ: Share of predictive claims. Share of causal claims. Change over time. Share of claims carrying a secondary claim type.]
 
 Table 2. Claims by type and year.
 
+| Year | n claims | Descriptive | Conceptual | Causal | Predictive | Normative | Other |
+|---|---|---|---|---|---|---|---|
+| 2015 | | | | | | | |
+| ... | | | | | | | |
+| 2025 | | | | | | | |
+| Total | | | | | | | |
+| Share | | | | | | | |
+
 ### 6.3 Warrant types
 
-[VERİ: Distribution of primary warrant across W1–W8, overall and by claim type. Share of W3 claims whose cited source carries W1/W2 versus W4–W8.]
+Table 3 gives the distribution of primary warrant across W1 to W8, by claim type. [VERİ: Overall warrant distribution. Share of W3 claims whose cited source carries W1/W2 versus W4–W8 versus W3 versus unretrievable. Share of cited sources that are peer reviewed.]
 
 Table 3. Primary warrant by claim type.
 
+| Claim type | W1 | W2 | W3 | W4 | W5 | W6 | W7 | W8 | n |
+|---|---|---|---|---|---|---|---|---|---|
+| Descriptive | | | | | | | | | |
+| Conceptual | | | | | | | | | |
+| Causal | | | | | | | | | |
+| Predictive | | | | | | | | | |
+| Normative | | | | | | | | | |
+| Other | | | | | | | | | |
+| All claims | | | | | | | | | |
+
+Table 3a. W3 claims by sub-code of the cited source.
+
+| Sub-code | n | Share of W3 claims | Share peer reviewed |
+|---|---|---|---|
+| Traces to W1 or W2 | | | |
+| Traces to W3 | | | |
+| Traces to W4–W8 | | | |
+| Source not retrievable | | | |
+
 ### 6.4 Fit
 
-[VERİ: Share of claims coded adequate, partial, inadequate, overall and by positioning. Fit for causal claims under P1 specifically.]
+[VERİ: Share of claims coded adequate, partial, inadequate, overall and by positioning. Fit for causal claims under P1 specifically. Share of computed fit values overridden by a coder, with the logged reasons summarised.]
+
+Table 3b. Causal claims in P4 articles, reported separately.
+
+| | Adequate | Partial | Inadequate | n |
+|---|---|---|---|---|
+| Causal claims, P1 articles | | | | |
+| Causal claims, P4 articles (flagged) | | | | |
+
+Causal claims in theory-building and policy-analytic articles are flagged because their authors often do not intend them as tested propositions. They are reported here rather than excluded, so that the reader can see both the flagged subset and the corpus total. [VERİ: Whether the two rows differ materially, and what follows for the overall fit distribution.]
 
 This is the first of the three closing sentences required by the design: [VERİ: Across the corpus, X% of claims rest on original or traced empirical evidence, Y% on analogy or deduction, Z% on declared conjecture or no stated warrant. Among causal claims in P1 articles, the corresponding shares are X', Y', Z'.]
 
@@ -278,11 +336,13 @@ This is the first of the three closing sentences required by the design: [VERİ:
 
 Table 4. Declared-forecast indicators in originating and citing texts.
 
-| Indicator | Present in originating text (%) | Present in citing text (%) | Loss (pp) |
-|---|---|---|---|
-| Scope conditions | | | |
-| Conjectural status | | | |
-| Falsifier | | | |
+| Indicator | Present in originating text (%) | Present in citing text (%) | Loss (pp) | n pairs |
+|---|---|---|---|---|
+| Scope conditions | | | | |
+| Conjectural status | | | | |
+| Falsifier | | | | |
+
+A claim enters Table 4 only where the cited source was retrieved and the proposition located in it, so that the two percentages are computed on the same claims. [VERİ: Number of W3 claims excluded because the originating text was not retrievable, as a count and as a share of W3 claims. If that share is large, the table is reported as descriptive of the retrievable subset only.]
 
 [VERİ: If loss is near zero, that is reported as a finding that the field preserves qualifiers in transmission. If loss is large, it is reported as such. Neither outcome is assumed.]
 
@@ -290,9 +350,14 @@ Table 4. Declared-forecast indicators in originating and citing texts.
 
 [VERİ: Correlation or rank association between citation measure and fit share; between citation measure and declared-forecast indicator share. Direction and magnitude. Confidence intervals.]
 
-This is the second closing sentence: [VERİ: The association between citation rank and adequate fit is positive / negative / null, with magnitude R.]
+Citation standing is measured as percentile rank within publication year, running from 0 for the most cited article of its year to 1 for the least cited. The sign of the association therefore reads as follows, and we state it explicitly because it is easy to invert:
 
-Under the protocol, if the association is null or positive, this is reported as evidence that the field's reception mechanisms do not systematically favour poorly warranted claims. That would be a substantive and, in our view, more interesting result than the alternative. The design does not privilege either outcome.
+- A **negative** ρ means that more cited articles have a **higher** share of adequately fitted claims. The field's reception mechanisms favour better warranted work.
+- A **positive** ρ means that more cited articles have a **lower** share of adequately fitted claims. The field's reception mechanisms favour worse warranted work.
+
+This is the second closing sentence: [VERİ: The association between within-year citation standing and adequate fit is positive / negative / null, with magnitude R and its confidence interval.]
+
+Under the protocol, if the association is null or negative, this is reported as evidence that the field's reception mechanisms do not systematically favour poorly warranted claims. That would be a substantive and, in our view, more interesting result than the alternative. The design does not privilege either outcome, and H3 is a conjecture that we report against whichever way it falls.
 
 ### 6.7 Most central claims
 
@@ -302,7 +367,7 @@ We identify the three claims with the highest aggregate citation weight, where a
 
 ## 7. Research Designs for Testing the Central Claims
 
-This section specifies how the three most central claims could be tested. The final selection of claims is determined by Section 6.7. Pending that, we specify designs for three candidate claims that pilot coding suggests are likely to rank highly. If the final ranking differs, this section is rewritten to match. The designs are the third closing sentence of the article.
+This section specifies how the three most central claims could be tested. The final selection of claims is determined by Section 6.7. Pending that, we specify designs for three candidate claims selected before coding, on the strength of their prominence in the claim families described in Section 2.1. Two of the three appeared in the two-article pilot; the third did not, and we say so in its subsection rather than implying a coded profile it does not have. The pilot covered two articles and twenty-one claims, is not protocol data, and cannot establish centrality. If the final ranking in Section 6.7 differs from these three, this section is rewritten to match. The designs are the third closing sentence of the article.
 
 Each design states: the claim in falsifiable form, the observable implications, the data required, the identification strategy, and the observation that would count against the claim.
 
@@ -310,7 +375,7 @@ Each design states: the claim in falsifiable form, the observable implications, 
 
 **Claim in falsifiable form.** Holding resources constant, states with higher organisational adoption capacity (measured by prior record of integrating new military technologies and by civil–military technology transfer institutions) will field operational military AI systems earlier and in more domains than states with lower capacity.
 
-**Origin in the corpus.** This claim extends the diffusion framework of Horowitz (2010) to AI (Horowitz 2018). In pilot coding it carried W4 and W5; the coded profile is reported in Section 6.7.
+**Origin in the corpus.** This claim extends the diffusion framework of Horowitz (2010) to AI (Horowitz 2018). It appeared twice in the two-article pilot, both times as a causal claim in a P4 article, and on both occasions its primary warrant was W3 sub-coded as tracing to original qualitative evidence. Two instances in two articles establish nothing about the corpus; the coded profile is reported in Section 6.7.
 
 **Observable implications.** Ordering of first operational deployment across states; breadth of deployment across domains; time from public demonstration to fielding.
 
@@ -324,7 +389,7 @@ Each design states: the claim in falsifiable form, the observable implications, 
 
 **Claim in falsifiable form.** Decision-makers presented with AI-generated assessments in a crisis will make escalatory choices more quickly and more often than decision-makers presented with equivalent assessments from human analysts.
 
-**Origin in the corpus.** In pilot coding this claim carried W4 (analogy to earlier automation) and W5; the coded profile is reported in Section 6.7. Experimental work has begun to test related propositions (Horowitz and Lin-Greenberg 2022; Lin-Greenberg 2022), which is why this claim is a strong candidate for a design that builds on W1.
+**Origin in the corpus.** This claim appeared twice in the two-article pilot, both times as a predictive claim in a P4 article: once with primary warrant W6, an expert assertion carrying no underlying data, and once with W4, an analogy to NATO warning time and ballistic-missile-defence pre-delegation developed over a full subsection. Neither instance identified a falsifier. Two instances establish nothing about the corpus; the coded profile is reported in Section 6.7. Experimental work has begun to test related propositions (Horowitz and Lin-Greenberg 2022; Lin-Greenberg 2022), which is why this claim is a strong candidate for a design that builds on W1.
 
 **Observable implications.** In controlled settings, difference in decision latency and in escalation choice by source of assessment. In observational settings, difference in crisis duration and outcome where AI-enabled early warning is known to be present.
 
@@ -338,7 +403,7 @@ Each design states: the claim in falsifiable form, the observable implications, 
 
 **Claim in falsifiable form.** Improvements in machine-learning-based sensor fusion and target recognition since 2015 have measurably reduced the expected survivability of mobile nuclear delivery systems against a first strike.
 
-**Origin in the corpus.** This claim builds on the counterforce argument of Lieber and Press (2017) and on the vulnerability paradox of Schneider (2019). In pilot coding it carried W3 tracing to W5 and W4; the coded profile is reported in Section 6.7.
+**Origin in the corpus.** This claim builds on the counterforce argument of Lieber and Press (2017) and on the vulnerability paradox of Schneider (2019). **It did not appear in the two-article pilot**, which covered diffusion and alliance topics and reached no article in the strategic-stability family. It therefore has no pilot warrant profile, and we report none. It is included here as a candidate on the strength of the prominence of the strategic-stability family described in Section 2.1, and it is retained in this section only if Section 6.7 ranks it among the three most central claims.
 
 **Observable implications.** Reduction in time to detect and classify mobile launchers in open-source or declassified test data; changes in force posture (dispersal, hardening, doctrinal shifts) by states whose forces are the presumed targets.
 
@@ -363,6 +428,12 @@ All three designs require pre-registration of hypotheses and outcome measures. A
 **Indexing bias.** WoS and Scopus over-represent journals based in North America and Western Europe. The corpus inherits that bias.
 
 **Coder judgment.** Fit is a judgment. We have reported reliability and adopted a conservative rule for disagreement, but the judgment remains one that other coders could make differently. The codebook is public so that they can.
+
+**The disagreement rule inflates the middle category.** Unresolved disagreements are coded partial. Partial is also a substantive value, assigned by the matrix to a large number of warrant and claim-type combinations. The two are not distinguished in the reported distribution, so the partial share contains both claims that are genuinely partially warranted and claims on which two coders could not agree. This makes the adequate and inadequate shares conservative, and it means the partial share should not be read as a substantive finding on its own. We report the number of claims that reached partial by the disagreement rule separately, so that a reader can subtract it.
+
+**The canonical claim list is frozen on a small pilot.** Claims from different articles are grouped as the same claim only when they match an entry in a list built during the pilot. A list built on a small number of articles will under-represent claims that recur later in the corpus, and a claim absent from the list is coded as "none" and cannot contribute to the centrality ranking in Section 6.7. Any claim assigned "none" by more than a threshold share of coders is a candidate for addition, and additions after the freeze are logged in Appendix D. This is a known weakness of the design rather than a solved problem.
+
+**Two rules are applied outside the matrix.** The declared-forecast test and the developed-analogy test are applied by formula rather than by lookup. Both are stated in Appendix A.5 and both are reproducible from the published workbook, but a reader reconstructing fit from the matrix alone would not recover them.
 
 **Citation as a measure of centrality.** Citation counts are shaped by journal prestige, author networks, and time since publication, and they do not distinguish endorsement from critique. We address the last through valence coding and the others through within-year ranking, but the measure remains an imperfect proxy for a claim's influence in the field.
 
@@ -458,6 +529,8 @@ Kello, Lucas. 2013. "The Meaning of the Cyber Revolution: Perils to Theory and S
 
 Krippendorff, Klaus. 2018. *Content Analysis: An Introduction to Its Methodology*. 4th ed. Thousand Oaks: Sage.
 
+Latour, Bruno. 1987. *Science in Action: How to Follow Scientists and Engineers through Society*. Cambridge, MA: Harvard University Press.
+
 Lake, David A. 2011. "Why 'Isms' Are Evil: Theory, Epistemology, and Academic Sects as Impediments to Understanding and Progress." *International Studies Quarterly* 55(2): 465–480.
 
 Levy, Jack S. 1984. "The Offensive/Defensive Balance of Military Technology: A Theoretical and Historical Analysis." *International Studies Quarterly* 28(2): 219–238.
@@ -475,6 +548,8 @@ Lindsay, Jon R. 2013. "Stuxnet and the Limits of Cyber Warfare." *Security Studi
 McCarthy, Daniel R. 2013. "Technology and 'the International' or: How I Learned to Stop Worrying and Love Determinism." *Millennium* 41(3): 470–490.
 
 Mearsheimer, John J., and Stephen M. Walt. 2013. "Leaving Theory Behind: Why Simplistic Hypothesis Testing Is Bad for International Relations." *European Journal of International Relations* 19(3): 427–457.
+
+Merton, Robert K. 1968. "The Matthew Effect in Science." *Science* 159(3810): 56–63.
 
 National Security Commission on Artificial Intelligence (NSCAI). 2021. *Final Report*. Washington, DC: NSCAI.
 
@@ -521,8 +596,9 @@ Extract all claims from abstract, introduction, and conclusion. Extract body cla
 3. Does the claim state a future state of affairs or a conditional future effect? → Predictive.
 4. Does the claim state that one thing produces, increases, decreases, or conditions another, in the present or past? → Causal.
 5. Otherwise → Descriptive.
+6. If none of 1 to 5 can be applied, → Other, and record why in the notes.
 
-Where 3 and 4 both apply, code both.
+Where 3 and 4 both apply to one proposition, the claim type is Predictive and the secondary claim type is Causal (Section 4.1). The claim occupies one record and is counted once. Coders do not create two records for one proposition.
 
 ### A.4 Warrant decision rules
 
@@ -537,21 +613,26 @@ Where 3 and 4 both apply, code both.
 
 ### A.5 Fit matrix
 
-Rows are claim types. Columns are primary warrant types. Cells give fit under P1; deviations for P2–P4 are noted below.
+Rows are claim types. Columns are primary warrant types, with the four W3 sub-codes shown separately because they carry different fit. This is the complete table: every one of the 66 combinations the instrument can produce is given a value, and the same table applies under all four positioning codes. Two rules are then applied on top of it, and they are the only points at which fit departs from this lookup. The machine-readable copy is the `Fit_Matrix` sheet of the coding workbook, which expands these 66 rows across the four positioning codes to 264 keys.
 
-| | W1 | W2 | W3 (→W1/W2) | W3 (→W4–W8) | W4 | W5 | W6 | W7 | W8 |
-|---|---|---|---|---|---|---|---|---|---|
-| Descriptive | A | A | A | P | P | I | P | P | I |
-| Conceptual | A | A | A | A | A | A | P | A | P |
-| Causal | A | A | A | P | P | P | I | P* | I |
-| Predictive | A | A | A | P | P | P | P | A* | I |
-| Normative | see note | | | | | | | | |
+| Claim type | W1 | W2 | W3→W1/W2 | W3→W3 | W3→W4–W8 | W3→unk. | W4 | W5 | W6 | W7 | W8 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Descriptive | A | A | A | P | P | P | P | I | P | P | I |
+| Conceptual | A | A | A | A | A | A | A | A | P | A | P |
+| Causal | A | A | A | P | P | P | P | P | I | P | I |
+| Predictive | A | A | A | P | P | P | P | P | P | A | I |
+| Normative | A | A | A | P | P | P | P | P | P | P | I |
+| Other | P | P | P | P | P | P | P | P | P | P | P |
 
-A = adequate; P = partial; I = inadequate.
-\* Adequate only if all three declared-forecast indicators are present; otherwise partial.
-Normative claims: code fit of the empirical premise using the row for that premise's type.
+A = adequate; P = partial; I = inadequate. W3→unk. is a W3 claim whose cited source could not be retrieved.
 
-Deviations: Under P2 and P3, causal claims with W2 are A regardless of covering-law structure. Under P4, causal claims are coded but flagged. Under P2, P3, and P4, W4 for predictive claims is A if the analogy is developed over at least one full section.
+**Rule 1, the declared-forecast test.** For a causal or predictive claim whose primary warrant is W7, the table value of A is granted only if all three declared-forecast indicators of Section 4.5 are present. With one or two indicators, or none, the fit is P. This applies under every positioning code. A conjecture that declares itself fully is adequately warranted as a conjecture; one that does not is not.
+
+**Rule 2, the developed-analogy test.** For a predictive claim whose primary warrant is W4, in an article coded P2, P3, or P4, the table value of P is raised to A if the analogy is developed over at least one full section rather than invoked in passing. This is the one point at which positioning changes a fit value, and it is recorded in a dedicated `w4_developed` field so that the judgment is data rather than coder discretion. Under P1 the value stays P regardless.
+
+**Normative claims** are assigned fit on the warrant offered for their empirical premise, using the Normative row above. The normative inference itself is not assessed. An earlier draft of this codebook instead redirected the coder to the row for the premise's own claim type; that produced two different answers for the same claim and was removed.
+
+**P4 causal claims** are coded for fit on the same table and additionally flagged, since P4 authors often do not intend causal statements as tested propositions. They are reported in a separate table in Section 6.4 and are not excluded from the main distribution.
 
 ### A.6 Declared-forecast indicators
 
@@ -559,7 +640,9 @@ Scope conditions: any explicit statement of the conditions under which the claim
 
 Conjectural status: any explicit modal or structural marker. Placement in a section titled "Hypotheses" or "Scenarios" counts.
 
-Falsifier: any statement, however brief, of what would count against the claim. "If X does not occur, the argument would be weakened" counts.
+Falsifier: any statement, however brief, of what would count against the claim. "If X does not occur, the argument would be weakened" counts. Constructing a contrasting scenario does not count on its own: setting out what happens under condition A and under condition B states the claim's range, not the observation that would defeat it. Where an author does both, only the latter is recorded.
+
+Originating text: for a claim whose primary warrant is W3, the coder opens the cited source, locates the proposition as the original author stated it, and records the same three indicators for that statement. Code the proposition as the cited author advanced it, not as the citing author reports it. Where the source cannot be retrieved, or the proposition cannot be located within it, record "unknown" for all three and note which of the two applies.
 
 ---
 
@@ -615,7 +698,15 @@ Annual hit counts for the string, 2010–2025, used to justify the start date:
 | Date | Change | Reason | Stage |
 |---|---|---|---|
 | [VERİ] | Extraction rule revised to include body claims marked as contributions | Pilot showed abstracts under-report causal claims | Pilot, pre-freeze |
-| | | | |
+| 2026-09-10 | Deposit target changed from a registry to a public Git repository with a Zenodo-archived release | Investigator preference; equivalent public time-stamping and DOI. Mechanism and limits in protocol §15 | Pre-freeze |
+| 2026-09-10 | Claim type made single-valued; secondary claim type added for propositions that are both causal and predictive | The scheme declared the types mutually exclusive and then instructed coders to code both, which would have made the shares in §6.2 sum to more than one | Pre-freeze |
+| 2026-09-10 | Fit matrix published in full (66 combinations) and the normative redirect removed | Appendix A.5 previously gave values for a subset and sent normative claims to a different row, which returned a different fit than the instrument did | Pre-freeze |
+| 2026-09-10 | Developed-analogy condition given a recorded field (`w4_developed`) | The rule was stated in the codebook but the instrument granted the upgrade unconditionally, so every predictive W4 claim under P2–P4 scored adequate unless caught by hand | Pre-freeze |
+| 2026-09-10 | Originating-text indicators added as three recorded fields | Table 4, RQ3 and H2 compare originating with citing text; only citing-text indicators were recorded, so the comparison had no data | Pre-freeze |
+| 2026-09-10 | Citation standing redefined as within-year percentile rank, and the sign convention stated explicitly in §6.6 and protocol §10 | The direction of the association was stated inconsistently across the protocol, the article and the analysis script | Pre-freeze |
+| 2026-09-10 | Reconciliation pass added before variable coding | Independent extraction produces no shared claim identifiers, so α could not have been computed for any variable | Pre-freeze |
+| 2026-09-10 | Contrasting scenarios ruled out as falsifiers (Appendix A.6) | Pilot note item 1; needed as a rule rather than a coder decision | Pre-freeze |
+| 2026-09-10 | W3 sub-code confirmed to turn on whether the source carries data; peer-review status recorded separately | Pilot note item 2 | Pre-freeze |
 
 ---
 
@@ -627,10 +718,20 @@ Annual hit counts for the string, 2010–2025, used to justify the start date:
 | Canonical claim assignment | [VERİ] | |
 | Citation valence | [VERİ] | |
 | Claim type | [VERİ] | |
+| Secondary claim type | [VERİ] | |
 | Primary warrant | [VERİ] | |
 | W3 sub-code | [VERİ] | |
+| Cited source peer reviewed | [VERİ] | |
 | Positioning | [VERİ] | |
 | Fit | [VERİ] | |
-| Scope conditions | [VERİ] | |
-| Conjectural status | [VERİ] | |
-| Falsifier | [VERİ] | |
+| Analogy developed over a full section | [VERİ] | |
+| Scope conditions, citing text | [VERİ] | |
+| Conjectural status, citing text | [VERİ] | |
+| Falsifier, citing text | [VERİ] | |
+| Scope conditions, originating text | [VERİ] | |
+| Conjectural status, originating text | [VERİ] | |
+| Falsifier, originating text | [VERİ] | |
+
+A variable for which no double-coded units exist is reported as "not computed", not as a pass. The pre-registered threshold has not been applied to such a variable and no claim is made about its reliability.
+
+Reliability requires that both coders assign the same claim identifier to the same segment of text. Because coders extract claims independently before coding them, a reconciliation pass assigns shared identifiers to the segments both coders identified, and that pass precedes variable coding. Claims identified by only one coder are recorded in the unitisation statistic and are excluded from the variable α, which is computed on the reconciled set.
