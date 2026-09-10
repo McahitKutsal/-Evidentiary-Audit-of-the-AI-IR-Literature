@@ -53,10 +53,17 @@ Makale taslağı, protokol, kodlama çalışma kitabı ve analiz betiği hazır.
 - [ ] Bölüm VII bitiş kriteri: üç cümle yazılabiliyor mu? Yazılamıyorsa makale bitmemiştir.
 - [ ] Teslim öncesi: `—` araması, yasaklı kalıp araması, kaynakça DOI kontrolü, yazar notunu sil.
 
-## Benim yapabileceklerim
+## Hesaplama desteği ve iş bölümü
 
-Tam metinleri (PDF) yüklerseniz: pilot kodlama için ikinci kodlayıcı olarak iddia çıkarabilir ve kodlayabilirim; bu, insan kodlayıcıyla α hesaplamak için kullanılabilir. Ancak nihai güvenilirlik raporu için manifesto iki insan kodlayıcı öngörüyor; benim kodlamam üçüncü okuyucu veya pilot kontrolü olarak konumlandırılmalı.
+Aşağıdaki işler betikle veya hesaplama desteğiyle yürütülebilir ve kodlayıcı yargısı gerektirmez:
 
-PRISMA dışa aktarımını (CSV) yüklerseniz: tekilleştirme, yıl/dergi dağılımı ve tabakalı örneklem çekimini yapabilirim.
+- Tekilleştirme kontrolü, yıl ve dergi dağılımı, tabakalı örneklem çekimi (RIS/CSV dışa aktarımı üzerinden).
+- α ve betimsel tabloların üretimi, `[VERİ]` etiketlerinin doldurulması, tabloların biçimlendirilmesi.
+- Kaynakça DOI doğrulaması ve biçim denetimi.
 
-Kodlanmış çalışma kitabını yüklerseniz: analizi çalıştırıp `[VERİ]` etiketlerini doldurabilirim.
+Kodlayıcı yargısı gerektiren ve insan tarafından yapılması gereken işler:
+
+- İddia çıkarımı ve kodlama. Protokol iki insan kodlayıcı öngörür ve güvenilirlik raporu bu iki kodlamaya dayanır.
+- Konumlandırma çıkarımı, uyum kararları ve override gerekçeleri.
+
+Yapay zekâ destekli çıkarım veya kodlama kullanılırsa, bu üçüncü okuyucu olarak konumlandırılır, ikinci insan kodlayıcının yerine geçmez, ve makalenin yöntem bölümünde açıkça beyan edilir. Beyan edilmemiş yapay zekâ kodlaması bu makalenin savunduğu şeffaflık ölçütüyle çelişir. Pilotun tek kodlayıcısının bu nitelikte olduğu `05_pilot_notu.md` ve `Change_Log` sayfasında kayıtlıdır.
