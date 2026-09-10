@@ -1,20 +1,22 @@
 # Pre-registration Protocol: Evidentiary Audit of the AI–IR Literature
 
-**Status:** Draft for deposit. Once deposited, this document is frozen (Manifesto §9). Any later change is logged in the Change Log with date and reason, and reported in the article's method section.
+**Status:** Frozen. Deposited and archived (see below). Any later change is logged in the Change Log with date and reason, and reported in the article's method section.
 
 **Deposit target:** Public Git repository, <https://github.com/McahitKutsal/-Evidentiary-Audit-of-the-AI-IR-Literature>, archived to Zenodo.
 
-Two dated public snapshots exist. Neither is the pre-registration. Both are recorded because they exist, are public and are citable, and because omitting them would misrepresent the deposit history.
+**Status: frozen 10 September 2026.** The protocol was frozen at commit `a99fbb22dcdd8926b6b0f49a636bed631c362b94`, tagged `preregistration-v1` (annotated, tagger date 2026-09-10T23:03:08+03:00), and archived under DOI [10.5281/zenodo.22697232](https://doi.org/10.5281/zenodo.22697232). Every condition in §16 was closed before the tag was applied. From this point every change to this document is made in a later commit and logged in §14.
+
+Two earlier snapshots exist and are recorded below. Neither is the pre-registration. They are listed because they are public and citable, and because omitting them would misrepresent the deposit history.
 
 | Deposit | Tag | Commit | Date | DOI | Status |
 |---|---|---|---|---|---|
 | Snapshot 1 | `protocol-freeze` | `f507074` | 2026-09-10 | [10.5281/zenodo.22696658](https://doi.org/10.5281/zenodo.22696658) | superseded |
 | Snapshot 2 | `protocol-freeze-v1` | `2e70926` | 2026-09-10 | [10.5281/zenodo.22697017](https://doi.org/10.5281/zenodo.22697017) | superseded |
-| **The freeze** | `preregistration-v1` | [ ] | [ ] | [ ] | pending §16 |
+| **The freeze** | `preregistration-v1` | `a99fbb2` | 2026-09-10 | [10.5281/zenodo.22697232](https://doi.org/10.5281/zenodo.22697232) | **the pre-registration** |
 
 At both snapshot commits the sampling seed in §6 was unfilled and the codebook decisions in §16 were still open, so neither can be cited as a pre-registration. Snapshot 2 additionally records the state after the working notes were moved out of the deposit and after the search contingency was folded into §3.
 
-**The freeze** is tagged `preregistration-v1`, and the tag is annotated so that it carries a date of its own. It is made only when every item in §16 is closed. That tag, and no other, is what the article cites as the pre-registration.
+The freeze is the deposit tagged `preregistration-v1`. That tag, and no other, is what the article cites as the pre-registration. A reader can verify it: `git rev-parse preregistration-v1^{commit}` returns `a99fbb22dcdd8926b6b0f49a636bed631c362b94`, and the Zenodo record under the DOI above holds the same tree.
 
 The distinction between the snapshots and the freeze is stated in §15, along with the deposit mechanism and its evidentiary limits, and is reported in the article's method section. No claim of pre-registration is attached to either snapshot.
 
@@ -200,4 +202,4 @@ The protocol is not frozen until every item below is closed. Each is recorded in
 
 All seven items are settled. Items 1, 2 and 3 bore directly on results, the first two on coder agreement and the third on which articles enter the sample; item 6 determined whether the study is completable at all. None could have been settled after coding began without the change being a departure from the pre-registration rather than a part of it, which is why the freeze waited on them.
 
-The protocol is therefore ready to be frozen. The freeze is the deposit tagged `preregistration-v1` described in §1 and §15.
+All seven were closed before the tag was applied. The protocol was frozen on 10 September 2026 at commit `a99fbb2`; see §1 for the deposit record.
