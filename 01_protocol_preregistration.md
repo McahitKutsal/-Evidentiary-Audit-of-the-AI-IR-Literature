@@ -31,7 +31,17 @@ Null or opposite results for H2 and H3 are reported as findings, not as failures
 
 Databases: Web of Science Core Collection; Scopus.
 
-Access contingency, declared in advance. Both databases require a subscription. If either is unavailable to the investigator at the time of the search, the search is instead run on OpenAlex, restricted to a journal list published in Appendix C, and the substitution is recorded in §14 before any records are screened. The feasibility of that route, the resolved journal identifiers, and three technical conditions it imposes (publication year reflecting online-first rather than issue date; uneven indexing of some venues; phrase-search semantics differing from the WoS `TS=` operator) were established on 10 September 2026 and are documented in `07_search_contingency.md`. This contingency is declared here rather than decided later so that the choice of database cannot be made after seeing results.
+**Access contingency, declared in advance.** Both databases require a subscription. If either is unavailable to the investigator at the time of the search, the search is instead run on OpenAlex, and the substitution is recorded in §14 before any record is screened. This contingency is declared here rather than decided later, so that the choice of database cannot be made after seeing results.
+
+Under that route three changes follow, each established by testing the OpenAlex API on 10 September 2026 and each adopted in advance rather than after inspection of the corpus:
+
+1. **Eligibility becomes a journal list.** §4 defines eligibility by subject category, and the WoS and Scopus category schemes have no OpenAlex equivalent. The corpus is instead defined by an explicit list of journals, fixed before searching and published in Appendix C with each journal's ISSN. This is the more reproducible criterion: the list is visible to the reader and does not depend on a proprietary classification that cannot be inspected.
+2. **Publication year is defined as the year OpenAlex records.** That value often reflects online-first publication rather than issue date; in testing, two articles from the reference list of this article returned two years and one year early respectively. The definition is declared here and applied consistently to the date boundary in this section and to the within-year percentile rank in §10. Where an article's issue year is needed and differs, the discrepancy is recorded.
+3. **The search string is rebuilt and validated by known-item retrieval.** OpenAlex does not honour quoted phrases as the WoS `TS=` operator does; a quoted phrase returned several thousand ranked matches in testing rather than an exact match. A list of known AI–IR articles is therefore drawn from the reference list of this article before searching, the rebuilt string is run, and the proportion of known items retrieved is reported in Appendix C as a sensitivity check on the string.
+
+Coverage under this route is uneven for some venues, including at least one journal represented in the pilot, where records are incomplete or carry no journal identifier. Each journal on the list is checked individually before the search, and any journal whose record count is materially below its known output is either excluded, with a reason, or completed by hand, with the completion recorded.
+
+Whether or not the subscription databases are available, the OpenAlex search is run once as a coverage cross-check and its result recorded in Appendix C.
 
 Date range: 1 January 2015 – 31 December 2025.
 Search string: see Appendix C of the article.

@@ -14,10 +14,8 @@ The study codes individual **claims** (not articles) by claim type, warrant type
 | `01_protocol_preregistration.md` | The pre-registration protocol. §15 defines the deposit and freeze mechanism. |
 | `02_coding_workbook.xlsx` | The coding instrument. Sheets: Legend, Fit_Matrix, Canonical_Claims, Articles, Claims, Change_Log, Summary. |
 | `03_reliability_and_analysis.py` | Krippendorff's alpha, descriptive tables, and the citation-rank analysis. |
-| `04_sonraki_adimlar.md` | Execution plan, phases 0-6 (Turkish). |
-| `05_pilot_notu.md` | Pilot coding note and the open codebook questions it raised (Turkish). |
-| `06_sizin_yapacaklariniz.md` | Investigator task list (Turkish). |
-| `07_search_contingency.md` | Validated fallback if the subscription databases are unavailable, plus an open-database coverage cross-check (Turkish). |
+
+The repository holds the research materials. Project management documents, working notes and task lists are kept outside it and are not part of the deposit. Nothing they contain is load-bearing for the study: the protocol is self-contained, every design decision is recorded in the protocol change log and in Appendix D of the article, the pilot's twenty-one coded claims are in the `Claims` sheet of the workbook, and the identity of the pilot coder is recorded in the workbook's `Change_Log`.
 
 ## Protocol freeze
 

@@ -17,3 +17,10 @@ Desktop.ini
 # Local scratch, never part of the deposit
 scratch/
 *.tmp
+
+# Internal project management: working notes, execution plans, task lists.
+# Kept on disk, deliberately outside the deposit. See README, Contents.
+04_sonraki_adimlar.md
+05_pilot_notu.md
+06_sizin_yapacaklariniz.md
+07_search_contingency.md
