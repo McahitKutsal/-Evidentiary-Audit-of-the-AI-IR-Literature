@@ -56,7 +56,7 @@ pip install pandas numpy openpyxl scipy
 python 03_reliability_and_analysis.py 02_coding_workbook.xlsx
 ```
 
-`scipy` is required for the citation-rank analysis but is not named in the script's own docstring.
+`scipy` is used only for the Spearman correlation in the citation analysis; everything else, including Krippendorff's alpha, is implemented in the script itself.
 
 ## Reporting rules
 
