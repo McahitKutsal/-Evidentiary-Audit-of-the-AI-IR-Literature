@@ -1,0 +1,19 @@
+# Excel lock files (created while the workbook is open)
+~$*.xlsx
+~$*.xls
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local scratch, never part of the deposit
+scratch/
+*.tmp

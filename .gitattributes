@@ -1,0 +1,11 @@
+# The freeze commit SHA is evidentiary (protocol §15). Pin line endings so that
+# a checkout on another platform cannot change the tree hash.
+* text=auto eol=lf
+
+*.md   text eol=lf
+*.py   text eol=lf
+
+# Binary: never normalise, never diff as text.
+*.xlsx binary
+*.xls  binary
+*.pdf  binary
