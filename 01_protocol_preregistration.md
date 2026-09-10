@@ -4,11 +4,19 @@
 
 **Deposit target:** Public Git repository, <https://github.com/McahitKutsal/-Evidentiary-Audit-of-the-AI-IR-Literature>, archived to Zenodo.
 
-**Deposit v1, pre-freeze snapshot.** Tag `protocol-freeze`, commit `f50707436317a533fe9fa9a9a5f9e68213671e0b`, deposited 10 September 2026, DOI [10.5281/zenodo.22696658](https://doi.org/10.5281/zenodo.22696658). This deposit is a dated public snapshot of the materials. It is **not** the freeze: at that commit the sampling seed in §6 was unfilled and the codebook decisions listed in §16 were still open. It is recorded here because it exists, is public, and is citable, and because omitting it would misrepresent the deposit history.
+Two dated public snapshots exist. Neither is the pre-registration. Both are recorded because they exist, are public and are citable, and because omitting them would misrepresent the deposit history.
 
-**Deposit v2, the freeze.** Tag `v1.0-protocol-frozen`, commit [ ], deposited [ ], DOI [ ]. This is the deposit the article cites as the pre-registration. It is made only when every item in §16 is closed.
+| Deposit | Tag | Commit | Date | DOI | Status |
+|---|---|---|---|---|---|
+| Snapshot 1 | `protocol-freeze` | `f507074` | 2026-09-10 | [10.5281/zenodo.22696658](https://doi.org/10.5281/zenodo.22696658) | superseded |
+| Snapshot 2 | `protocol-freeze-v1` | `2e70926` | 2026-09-10 | [10.5281/zenodo.22697017](https://doi.org/10.5281/zenodo.22697017) | superseded |
+| **The freeze** | `preregistration-v1` | [ ] | [ ] | [ ] | pending §16 |
 
-The distinction between the two deposits is stated in §15, along with the mechanism and its evidentiary limits, and is reported in the article's method section. No claim of pre-registration is attached to v1.
+At both snapshot commits the sampling seed in §6 was unfilled and the codebook decisions in §16 were still open, so neither can be cited as a pre-registration. Snapshot 2 additionally records the state after the working notes were moved out of the deposit and after the search contingency was folded into §3.
+
+**The freeze** is tagged `preregistration-v1`, and the tag is annotated so that it carries a date of its own. It is made only when every item in §16 is closed. That tag, and no other, is what the article cites as the pre-registration.
+
+The distinction between the snapshots and the freeze is stated in §15, along with the deposit mechanism and its evidentiary limits, and is reported in the article's method section. No claim of pre-registration is attached to either snapshot.
 
 ---
 
@@ -148,11 +156,13 @@ The protocol is deposited as a file in a public Git repository rather than in a 
 
 **What is deposited.** This protocol, the coding workbook, the analysis script, and the article draft are committed to <https://github.com/McahitKutsal/-Evidentiary-Audit-of-the-AI-IR-Literature>. The repository is public from the first commit.
 
-**The freeze event.** The protocol is frozen by an annotated Git tag named `v1.0-protocol-frozen` applied to a specific commit, published as a GitHub release and archived to Zenodo. From that tag onward, every change to this document is made in a later commit and logged in §14 with date and reason. The frozen text remains permanently retrievable at the tagged commit.
+**The freeze event.** The protocol is frozen by an annotated Git tag named `preregistration-v1` applied to a specific commit, published as a GitHub release and archived to Zenodo. From that tag onward, every change to this document is made in a later commit and logged in §14 with date and reason. The frozen text remains permanently retrievable at the tagged commit.
 
-**Two deposits, and why.** An earlier deposit, tagged `protocol-freeze` and archived under DOI 10.5281/zenodo.22696658 on 10 September 2026, was made before the codebook decisions in §16 were settled and before the sampling seed in §6 was chosen. It is a dated public snapshot and nothing more. Presenting it as a pre-registration would assert that the design was fixed when it was not, which is the exact failure this article was written to measure. It is therefore recorded as v1 and superseded. Zenodo's versioning keeps both deposits under one concept DOI, so the supersession is visible rather than concealed; the earlier record is not deleted, and the article cites v2.
+**Snapshots, and why they are not the freeze.** Two releases were archived on 10 September 2026, under DOIs 10.5281/zenodo.22696658 and 10.5281/zenodo.22697017. Both were taken before the codebook decisions in §16 were settled and before the sampling seed in §6 was chosen. Presenting either as a pre-registration would assert that the design was fixed when it was not, which is the exact failure this article was written to measure. They are therefore recorded as dated snapshots and superseded, not deleted. The freeze is a third, later deposit.
 
-**Tag form.** The v1 tag was created as a lightweight tag and so carries no tagger date of its own. The authoritative timestamp for that deposit is the Zenodo publication date. The v2 tag is annotated, so that the freeze carries a date in the repository as well as in the archive.
+**Tag form.** Both snapshot tags were created as lightweight tags and so carry no tagger date of their own; for those deposits the authoritative timestamp is the Zenodo publication date. The freeze tag is annotated (`git tag -a`), so that the freeze carries a date in the repository as well as in the archive.
+
+**Separate records.** The two snapshots were published as independent Zenodo records rather than as versions of one concept, so no concept DOI links them. The article therefore cites the freeze DOI directly and lists the snapshot DOIs alongside it, rather than relying on a version chain to make the history visible.
 
 **What this establishes.** Git commits are content-addressed: the commit SHA is a cryptographic hash over the tree, the parent commit, the author and committer identities, and the timestamps. Any alteration to the protocol text at or before the freeze commit produces a different SHA and therefore breaks every descendant commit. Once the freeze SHA is published in the article, in the coding workbook change log, and in the Zenodo archive, an undetected substitution of the frozen text is not feasible.
 
