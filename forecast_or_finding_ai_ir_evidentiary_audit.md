@@ -164,7 +164,7 @@ Each article, not each claim, is coded for the author's stated or evident episte
 | P3 | Critical | Seeks to expose structures of power or assumptions; treats evidence as exemplifying |
 | P4 | Theory-building or policy-analytic | Seeks to propose frameworks or options; treats evidence as motivating |
 
-Positioning is coded from the author's own methodological statements where present. Where absent, coders infer positioning from the structure of the argument and record that the inference was made.
+Positioning is coded from the author's own methodological statements where present. Where absent, coders infer positioning from the structure of the argument and record that the inference was made. The decision rules, including the boundary between P1 and P4, are in Appendix A.7. The short form is that the test is what an article does with evidence rather than what it calls itself: language such as "framework" or "agenda" does not on its own place an article in P4, and the question is whether the evidence presented could have come out against the argument.
 
 It is worth being exact about where positioning does its work, because it is easy to overstate. Positioning changes a fit value at exactly one point in the matrix: a predictive claim resting on a developed analogy is adequate under P2, P3, and P4 and partial under P1, because framework-building and interpretive work treat a sustained analogy as an argument in itself while neo-positivist work treats it as a substitute for evidence. Everywhere else the matrix is the same under all four codes.
 
@@ -237,7 +237,11 @@ The exclusion of grey literature and books is a limitation, discussed in Section
 
 ### 5.4 Sampling
 
-[VERİ: Tam örneklem mi, tabakalı örneklem mi? Eğer tarama sonucu N > 400 ise yıl ve dergi tabakalı rastgele örneklem alınır; N ≤ 400 ise tam kodlama yapılır. Karar ve gerekçe buraya yazılır.]
+Where the number of included articles is 250 or fewer, every included article is coded. Where it exceeds 250, a stratified random sample of 250 is drawn, stratified by publication year and journal, using the seed recorded in the protocol. The seed was fixed before the search was run.
+
+The cap is set at 250 rather than at the larger figure an audit of this kind might prefer, and the reason is coding capacity rather than sampling theory. At roughly ten claims per article, a corpus of 250 articles yields about 2,500 claims. Each claim must be extracted, typed, assigned a warrant and a fit, and for claims warranted by citation the cited source must be retrieved and, where the claim is predictive or causal-future, coded a second time for the originating-text indicators of Section 4.5. A quarter of the corpus is coded twice. A larger cap would have produced a design the available coding effort could not complete, and an incomplete corpus is a worse defect than a smaller one. We state the cap and its reason here rather than presenting the figure as a methodological choice it is not.
+
+[VERİ: Hangi dal uygulandı: tam kodlama mı, tabakalı örneklem mi? N sayısı ve karar buraya yazılır.]
 
 ### 5.5 Claim extraction
 
@@ -611,6 +615,16 @@ Where 3 and 4 both apply to one proposition, the claim type is Predictive and th
 - W7 requires explicit marking: "we speculate," "hypothetically," "a plausible scenario," or equivalent.
 - W8 is residual.
 
+**Distinguishing W6 from W3.** Both codes cover a claim grounded in something someone else said, and coders divide them by asking what the cited source is doing, not who wrote it. A source offering **judgment** is W6. A source reporting **fact** is W3, and its sub-code then turns on whether it carries data.
+
+*W6 example.* An article supports the claim that no AI application yet counts as a military innovation by citing a research report in which a specialist assesses the state of the field. The report advances an expert's considered view rather than a body of evidence, and the claim rests on the authority of that view. Code W6.
+
+*W3 example.* An article supports the claim that one state now outspends another on AI research by citing a newspaper report of spending figures. The journalist is not offering an opinion; the sentence transmits a factual assertion that originates elsewhere. Code W3, then sub-code by what stands behind the report: if it names an underlying dataset or study, `to_W1W2`; if it rests on unattributed figures or on further assertion, `to_W4W8`; if the trail cannot be followed, `unknown`.
+
+The boundary case is an expert quoted in a news article. Ask what the citing author is using it for. If the quoted person's opinion is the ground, code W6. If the reported fact is the ground and the quotation merely conveys it, code W3.
+
+**Peer review is recorded separately.** The W3 sub-code turns on whether the cited source carries data, not on whether it was peer reviewed. A government statistical release and a non-refereed survey report can both be `to_W1W2`. Peer-review status is recorded in its own field so that the two properties can be reported independently and neither is smuggled into the other.
+
 ### A.5 Fit matrix
 
 Rows are claim types. Columns are primary warrant types, with the four W3 sub-codes shown separately because they carry different fit. This is the complete table: every one of the 66 combinations the instrument can produce is given a value, and the same table applies under all four positioning codes. Two rules are then applied on top of it, and they are the only points at which fit departs from this lookup. The machine-readable copy is the `Fit_Matrix` sheet of the coding workbook, which expands these 66 rows across the four positioning codes to 264 keys.
@@ -643,6 +657,23 @@ Conjectural status: any explicit modal or structural marker. Placement in a sect
 Falsifier: any statement, however brief, of what would count against the claim. "If X does not occur, the argument would be weakened" counts. Constructing a contrasting scenario does not count on its own: setting out what happens under condition A and under condition B states the claim's range, not the observation that would defeat it. Where an author does both, only the latter is recorded.
 
 Originating text: for a claim whose primary warrant is W3, the coder opens the cited source, locates the proposition as the original author stated it, and records the same three indicators for that statement. Code the proposition as the cited author advanced it, not as the citing author reports it. Where the source cannot be retrieved, or the proposition cannot be located within it, record "unknown" for all three and note which of the two applies.
+
+
+### A.7 Positioning decision rules
+
+Positioning is coded once per article, before any claim in it is coded, and the coder records whether it was stated by the author or inferred.
+
+**The test is what the article does with evidence, not what it calls itself.** Language such as "framework", "agenda", "a first cut", or "initial framework" does not by itself place an article in P4. Authors use that vocabulary for many reasons, including modesty about a piece that does test propositions. Apply the following in order:
+
+1. Does the article state a methodological or epistemological position of its own? If so, take it, and record positioning as stated rather than inferred. The remaining steps apply only where no such statement exists.
+2. Does the article derive expectations and then confront them with evidence assembled to adjudicate between them, such that a reader could say which way the evidence came out? → **P1.** This holds whether the evidence is statistical or case-based, and whether the expectations are called hypotheses, propositions or conjectures.
+3. Does the article's central work consist in reconstructing meaning, practice or discourse, treating evidence as something to be interpreted rather than to be weighed against alternatives? → **P2.**
+4. Does the article set out to expose an assumption, a structure of power, or the conditions under which a category came to seem natural, treating evidence as exemplification? → **P3.**
+5. Otherwise, where the article proposes a framework, typology, or set of policy options, and evidence appears to motivate or illustrate the proposal rather than to test it → **P4.**
+
+**Boundary rule for P1 against P4.** The question is whether the evidence presented could have come out the other way. If the article assembles material capable of disconfirming what it argues, it is P1 even where it describes itself as offering a framework. If the material is chosen to show what the framework can do, it is P4 even where the article states hypotheses. A section headed "hypotheses" whose evidence consists only of confirming illustrations is P4.
+
+**Recording.** Where steps 2 to 5 are close, the coder records both the assigned code and the runner-up, with a sentence giving the deciding consideration. This is the variable most exposed to coder disagreement, and the runner-up field is what makes disagreement diagnosable rather than merely visible in a low alpha.
 
 ---
 
@@ -708,7 +739,13 @@ Annual hit counts for the string, 2010–2025, used to justify the start date:
 | 2026-09-10 | Contrasting scenarios ruled out as falsifiers (Appendix A.6) | Pilot note item 1; needed as a rule rather than a coder decision | Pre-freeze |
 | 2026-09-10 | W3 sub-code confirmed to turn on whether the source carries data; peer-review status recorded separately | Pilot note item 2 | Pre-freeze |
 | 2026-09-10 | Licence set: CC BY 4.0 for text, protocol, codebook and data; MIT for the analysis script | Required before deposit; matches the licence recorded on the archive | Pre-freeze |
-| 2026-09-10 | Deposit v1 made (tag `protocol-freeze`, DOI 10.5281/zenodo.22696658) and recorded as a pre-freeze snapshot rather than as the pre-registration | The deposit was taken before the sampling seed was chosen and before the codebook decisions in protocol §16 were settled. Recorded and superseded rather than deleted; the freeze is deposit v2 | Pre-freeze |
+| 2026-09-10 | Deposit v1 made (tag `protocol-freeze`, DOI 10.5281/zenodo.22696658) and recorded as a pre-freeze snapshot rather than as the pre-registration | The deposit was taken before the sampling seed was chosen and before the codebook decisions in protocol §16 were settled. Recorded and superseded rather than deleted; the freeze is a later deposit | Pre-freeze |
+| 2026-09-10 | Second snapshot deposited (tag `protocol-freeze-v1`, DOI 10.5281/zenodo.22697017); freeze tag named `preregistration-v1` | Also taken before the §16 gate closed. The three tag names differed only by suffix and invited confusion; the freeze is now named for what it is | Pre-freeze |
+| 2026-09-10 | Working notes and execution plans moved out of the public deposit; search contingency folded into protocol §3 | A pre-registration that points at a file outside itself is not self-contained | Pre-freeze |
+| 2026-09-10 | W6 and W3 boundary fixed with worked examples (Appendix A.4): judgment is W6, reported fact is W3 | Pilot note item 4; a rule with examples rather than a coder decision | Pre-freeze |
+| 2026-09-10 | P1/P4 decision tree added (Appendix A.7); framework or agenda language alone does not place an article in P4, and a runner-up code is recorded where the decision is close | Pilot note item 6; positioning is the variable most exposed to coder disagreement | Pre-freeze |
+| 2026-09-10 | Sampling seed fixed at 20260910 and the stratified sample capped at 250 rather than 400 | Seed fixed before the search so it cannot be chosen after N is known; the cap is set by coding capacity, stated in §5.4 | Pre-freeze |
+| 2026-09-10 | Coders recorded: investigator as first coder, second human coder to be named before coding begins; AI-assisted coding is a third reader only and is declared | Protocol §9 | Pre-freeze |
 
 ---
 

@@ -69,8 +69,11 @@ Two screeners, independent, at title/abstract and at full text. Disagreements re
 
 ## 6. Sampling rule
 
-If N included ≤ 400: full coding.
-If N > 400: stratified random sample by publication year and journal, minimum 400 articles, drawn with a fixed seed recorded here: seed = [ ].
+If N included ≤ 250: full coding.
+
+If N > 250: stratified random sample of exactly 250 articles, stratified by publication year and journal, drawn with a fixed seed recorded here: **seed = 20260910**. Allocation is proportional to stratum size, with a minimum of one article per year in which any article was included, and remainders assigned by the same seed.
+
+The cap is 250 and the reason is coding capacity, not sampling theory. At roughly ten claims per article a corpus of 250 yields about 2,500 claims, each requiring extraction, typing, warrant assignment and fit, with cited-source retrieval for every W3 claim and a second coding of the originating text for W3 claims that are predictive or causal-future, and with a quarter of the corpus coded twice. A larger cap would specify a study the available effort could not finish. An incomplete corpus is a worse defect than a smaller one. This figure and its justification are fixed before the search is run so that the cap cannot be adjusted after N is known.
 
 ## 7. Unit of analysis and extraction
 
@@ -87,6 +90,7 @@ Extraction scope: all claims in abstract, introduction, conclusion; body claims 
 | W3 sub-code | claim | traces to W1/W2; traces to W3; traces to W4–W8; unknown |
 | Positioning | article | P1, P2, P3, P4 |
 | Positioning inferred | article | yes/no |
+| Positioning runner-up | article | P1–P4 or none |
 | Fit | claim | adequate, partial, inadequate |
 | Scope conditions stated | claim (predictive/causal-future) | 0/1 |
 | Conjectural status signalled | claim | 0/1 |
@@ -108,7 +112,9 @@ Fit is assigned by the matrix in Appendix A of the article. Coders record inputs
 
 ## 9. Reliability
 
-Double coding: minimum 25% of articles, random, fixed seed.
+Coders: Mücahit Kutsal (investigator, first coder) and a second coder with graduate training in international relations, to be named in the change log before coding begins. The protocol requires two human coders. Any AI-assisted extraction or coding is positioned as a third reader, is never substituted for the second human coder, and is declared in the article's method section; the pilot's single coder was of that kind and is recorded as such in the workbook change log.
+
+Double coding: minimum 25% of articles, random, fixed seed (as in §6).
 
 Reconciliation pass: because coders extract claims independently before coding them, the two coders will not produce matching claim identifiers on their own. Before variable coding, a reconciliation pass assigns a shared identifier to every segment that both coders identified as a claim. Segments identified by only one coder are recorded for the unitising statistic and excluded from variable α. Without this pass no variable α can be computed at all.
 
@@ -184,12 +190,14 @@ The protocol is not frozen until every item below is closed. Each is recorded in
 
 | # | Item | Status |
 |---|---|---|
-| 1 | Boundary rule between W6 (expert judgment) and W3 citing journalism, with two worked examples in the codebook | open |
-| 2 | Decision tree for the P1/P4 boundary, stating whether framework or agenda language alone places an article in P4 | open |
-| 3 | Sampling seed for §6, chosen and recorded before any sample is drawn | open |
-| 4 | Licence for text, data and code | closed 2026-09-10: CC BY 4.0 for text, protocol, codebook and data; MIT for the analysis script. Recorded in LICENSE. |
-| 5 | Coder names recorded in §9 | open |
-| 6 | Whether the §6 stratified sample is capped at 400 or at a lower figure, given the coding burden costed in the execution checklist | open |
-| 7 | Confirmation that both Web of Science Core Collection and Scopus are accessible, with export rights; if only one is available, §3, §5 and the PRISMA appendix are rewritten before the freeze | open |
+| 1 | Boundary rule between W6 (expert judgment) and W3 citing journalism, with two worked examples in the codebook | **closed** 2026-09-10: the test is whether the cited source offers judgment (W6) or reports fact (W3). Two worked examples and the boundary case of an expert quoted in a news report are in Appendix A.4. Peer-review status is recorded in its own field and does not enter the sub-code. |
+| 2 | Decision tree for the P1/P4 boundary | **closed** 2026-09-10: framework or agenda language does not on its own place an article in P4. The test is whether the evidence presented could have come out against the argument. Five-step tree in Appendix A.7, with a runner-up code recorded where the decision is close. |
+| 3 | Sampling seed for §6 | **closed** 2026-09-10: seed = 20260910, fixed before the search. |
+| 4 | Licence for text, data and code | **closed** 2026-09-10: CC BY 4.0 for text, protocol, codebook and data; MIT for the analysis script. Recorded in LICENSE. |
+| 5 | Coder names recorded in §9 | **closed** 2026-09-10: investigator named; second coder to be named in the change log before coding begins, with the AI-as-third-reader rule stated. |
+| 6 | Whether the §6 stratified sample is capped at 400 or at a lower figure | **closed** 2026-09-10: capped at 250, on coding-capacity grounds stated in §6. |
+| 7 | Confirmation that Web of Science Core Collection and Scopus are accessible | **not blocking.** §3 now carries an access contingency declared in advance, so the protocol is complete whichever way access falls. Access is still to be confirmed and the outcome recorded in §14, but the freeze does not wait on it. |
 
-Items 1, 2 and 3 bear directly on results: the first two on coder agreement, the third on which articles enter the sample. Item 6 determines whether the study is completable at all. None of them can be settled after coding begins without the change being a departure from the pre-registration rather than a part of it.
+All seven items are settled. Items 1, 2 and 3 bore directly on results, the first two on coder agreement and the third on which articles enter the sample; item 6 determined whether the study is completable at all. None could have been settled after coding began without the change being a departure from the pre-registration rather than a part of it, which is why the freeze waited on them.
+
+The protocol is therefore ready to be frozen. The freeze is the deposit tagged `preregistration-v1` described in §1 and §15.
