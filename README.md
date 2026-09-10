@@ -17,6 +17,7 @@ The study codes individual **claims** (not articles) by claim type, warrant type
 | `04_sonraki_adimlar.md` | Execution plan, phases 0-6 (Turkish). |
 | `05_pilot_notu.md` | Pilot coding note and the open codebook questions it raised (Turkish). |
 | `06_sizin_yapacaklariniz.md` | Investigator task list (Turkish). |
+| `07_search_contingency.md` | Validated fallback if the subscription databases are unavailable, plus an open-database coverage cross-check (Turkish). |
 
 ## Protocol freeze
 

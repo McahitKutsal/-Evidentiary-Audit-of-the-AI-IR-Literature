@@ -30,6 +30,9 @@ Null or opposite results for H2 and H3 are reported as findings, not as failures
 ## 3. Search
 
 Databases: Web of Science Core Collection; Scopus.
+
+Access contingency, declared in advance. Both databases require a subscription. If either is unavailable to the investigator at the time of the search, the search is instead run on OpenAlex, restricted to a journal list published in Appendix C, and the substitution is recorded in §14 before any records are screened. The feasibility of that route, the resolved journal identifiers, and three technical conditions it imposes (publication year reflecting online-first rather than issue date; uneven indexing of some venues; phrase-search semantics differing from the WoS `TS=` operator) were established on 10 September 2026 and are documented in `07_search_contingency.md`. This contingency is declared here rather than decided later so that the choice of database cannot be made after seeing results.
+
 Date range: 1 January 2015 – 31 December 2025.
 Search string: see Appendix C of the article.
 Language: English.

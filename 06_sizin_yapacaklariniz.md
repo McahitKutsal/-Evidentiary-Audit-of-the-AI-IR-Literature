@@ -12,6 +12,7 @@ Dosyalar:
 | `03_reliability_and_analysis.py` | α, betimsel tablolar, aktarım tablosu, atıf analizi |
 | `04_sonraki_adimlar.md` | Genel yürütme planı |
 | `05_pilot_notu.md` | Pilot notu ve açık kod kitabı soruları |
+| `07_search_contingency.md` | WoS/Scopus erişimi yoksa uygulanacak OpenAlex tasarımı; fizibilite doğrulanmış |
 | `README.md` | Deponun kamuya açık tanıtımı ve dondurma durumu |
 
 ---
@@ -52,7 +53,12 @@ Karara bağlanan her madde `Change_Log`'a, protokol §16'ya ve makale Ek D'ye i�
 
 ## 1. Erişim ve hesaplar (1 saat)
 
-- [ ] Kurumunuzun Web of Science Core Collection ve Scopus erişimini doğrulayın. Yalnızca biri varsa protokol §3 değişir ve tek veritabanlı sürüme uyarlanması gerekir; bu bir protokol değişikliğidir, dondurmadan önce yapılmalıdır.
+- [ ] **Erişim kontrolü.** Bakanlık hesabında WoS/Scopus yok. Üniversite kütüphanesi üzerinden deneyin; kurum ağından ya da kütüphane proxy'siyle giriş yapın. Üç ayrı şey kontrol edilecek:
+  - [ ] **webofscience.com** → koleksiyon menüsünde **"Core Collection"** seçilebiliyor mu? (Bazı abonelikler yalnızca TR Dizin gibi bölgesel indeksleri açar; protokol özellikle Core Collection diyor.)
+  - [ ] **scopus.com** → arama sonuç listesi geliyor mu? (Ücretsiz "Preview" arama yaptırır ama sonuç vermez.)
+  - [ ] **Toplu dışa aktarım** → seçili kayıtları RIS/CSV olarak indirebiliyor musunuz? Bu olmadan tekilleştirme ve PRISMA sayımı yapılamaz.
+- [ ] Erişim yoksa veya yalnızca birine erişim varsa: `07_search_contingency.md` dosyasındaki OpenAlex tasarımına geçilir. O dosyada fizibilite doğrulanmış, dergi listesi çözümlenmiş ve kapatılması gereken üç teknik sorun yazılmıştır. Bu bir protokol değişikliğidir ve **dondurmadan önce** yapılır: §3, §4, §10, Ek B ve Ek C yeniden yazılır.
+- [ ] Erişim olsa bile OpenAlex taramasını **kapsam çapraz kontrolü** olarak bir kez çalıştırın ve sonucu Ek C'ye yazın. Maliyeti düşük; taramanın tescilli bir kategori şemasına bağımlı olmadığını gösterir.
 - [ ] GitHub deposunun public olduğunu doğrulayın: <https://github.com/McahitKutsal/-Evidentiary-Audit-of-the-AI-IR-Literature>
 - [ ] Zenodo hesabı açın (zenodo.org), GitHub ile giriş yapın, bu depoyu Zenodo'da açık konuma getirin. Dondurmanın kurcalanamazlığı buna bağlıdır (protokol §15).
 - [ ] `main` dalı için force-push'u kapatın (Settings → Branches → Branch protection).
