@@ -707,6 +707,8 @@ Annual hit counts for the string, 2010–2025, used to justify the start date:
 | 2026-09-10 | Reconciliation pass added before variable coding | Independent extraction produces no shared claim identifiers, so α could not have been computed for any variable | Pre-freeze |
 | 2026-09-10 | Contrasting scenarios ruled out as falsifiers (Appendix A.6) | Pilot note item 1; needed as a rule rather than a coder decision | Pre-freeze |
 | 2026-09-10 | W3 sub-code confirmed to turn on whether the source carries data; peer-review status recorded separately | Pilot note item 2 | Pre-freeze |
+| 2026-09-10 | Licence set: CC BY 4.0 for text, protocol, codebook and data; MIT for the analysis script | Required before deposit; matches the licence recorded on the archive | Pre-freeze |
+| 2026-09-10 | Deposit v1 made (tag `protocol-freeze`, DOI 10.5281/zenodo.22696658) and recorded as a pre-freeze snapshot rather than as the pre-registration | The deposit was taken before the sampling seed was chosen and before the codebook decisions in protocol §16 were settled. Recorded and superseded rather than deleted; the freeze is deposit v2 | Pre-freeze |
 
 ---
 

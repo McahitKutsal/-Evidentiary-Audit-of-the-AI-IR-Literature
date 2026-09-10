@@ -7,7 +7,7 @@ Makale taslağı, protokol, kodlama çalışma kitabı ve analiz betiği hazır.
 - [ ] `01_protocol_preregistration.md` dosyasını oku, seed ve tarihleri doldur.
 - [ ] Depo: <https://github.com/McahitKutsal/-Evidentiary-Audit-of-the-AI-IR-Literature>. Protokol, çalışma kitabı, betik ve makale taslağı commit edilir.
 - [ ] Açık kod kitabı kararları kapatılmadan dondurma yapılmaz (bkz. `06_sizin_yapacaklariniz.md` §1).
-- [ ] Dondurma: `git tag -a protocol-frozen -m "..."` ve `git push origin protocol-frozen`. GitHub'da release oluştur.
+- [ ] Dondurma: `git tag -a v1.0-protocol-frozen -m "..."` ve `git push origin v1.0-protocol-frozen`. GitHub'da release oluştur.
 - [ ] Zenodo'yu depoya bağla, release'i arşivle, DOI'yi al. DOI olmadan dondurma tamamlanmış sayılmaz (protokol §15).
 - [ ] SHA, tag tarihi ve DOI'yi protokol §1'e, makale 5.1'e ve `Change_Log` ilk satırına yaz.
 - [ ] Bu andan sonra şema değişikliği yalnızca `Change_Log` sayfası ve yeni bir commit üzerinden. `--force` push kapalı.

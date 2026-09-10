@@ -32,15 +32,23 @@ Protokol bu bölüm bitmeden dondurulamaz. Bir denetim makalesi, kendi enstrüma
 - [x] İddia türü tek değerli yapıldı, `secondary_claim_type` eklendi.
 - [x] Betikteki sessiz α geçişi kapatıldı: çift kodlama yoksa "not computed / NOT a pass" yazıyor.
 
-**Hâlâ açık, karar sizin:**
+- [x] **Lisans** seçildi: metin, protokol, kod kitabı ve veri için CC BY 4.0; analiz betiği için MIT. `LICENSE` dosyası eklendi ve Zenodo kaydındaki lisansla eşleşiyor.
+- [x] **Zenodo bağlandı ve force-push kapatıldı.**
+
+**Hâlâ açık, karar sizin (protokol §16'da da listeli):**
 
 - [ ] **W6 ile W3→haber ayrımı.** Kod kitabına iki somut örnek yazın. Pilotta Cummings raporu W6, NYT haberi W3→to_W4W8 kodlandı; ayrım savunulabilir ama örnekle sabitlenmeli, yoksa çift kodlamada α düşürür.
 - [ ] **P1/P4 sınırı için karar ağacı.** "framework", "agenda", "initial framework" ifadeleri tek başına P4'e iter mi? Pilotta Horowitz 2018 tam bu ifade yüzünden P4'e gitti ve iki kodlayıcı burada kolayca ayrışır. Positioning α'sı 0,70'in altına düşerse tüm konumlandırma temelli analiz gider.
 - [ ] **Örneklem seed'i.** Protokol §6'daki boşluk. Şimdi seçin ve yazın; sonra seçilirse ön kayıt anlamını yitirir.
-- [ ] **Lisans.** README'de "dondurmadan önce seçilecek" yazıyor. Öneri: metin ve veri için CC BY 4.0, betik için MIT.
 - [ ] **Kodlayıcı adları** protokol §9'a.
+- [ ] **Örneklem üst sınırı**: 400 mü, daha düşük bir sayı mı? Kodlama yükü hesabı için Bölüm 7'ye bakın.
+- [ ] **WoS + Scopus erişimi** doğrulandı mı? Yalnızca birine erişim varsa protokol §3, §5 ve Ek B dondurmadan önce yeniden yazılır.
 
-Karara bağlanan her madde `Change_Log`'a ve makale Ek D'ye işlenir.
+Karara bağlanan her madde `Change_Log`'a, protokol §16'ya ve makale Ek D'ye işlenir.
+
+### Zenodo v1 hakkında
+
+10 Eylül 2026'da `protocol-freeze` etiketinden bir release alındı ve [10.5281/zenodo.22696658](https://doi.org/10.5281/zenodo.22696658) DOI'si üretildi. **Bu ön kayıt değildir**: o commit'te örneklem seed'i boştu ve yukarıdaki kararlar açıktı. Kayıt silinmiyor, "v1, dondurma öncesi anlık görüntü" olarak belgeleniyor. Asıl dondurma, kararlar kapandıktan sonra `v1.0-protocol-frozen` etiketinden alınacak **v2** release'idir ve makalede atıf verilecek DOI odur. Zenodo iki sürümü tek bir concept DOI altında tutar, dolayısıyla değişim gizlenmiş olmaz.
 
 ## 1. Erişim ve hesaplar (1 saat)
 
@@ -67,10 +75,10 @@ Bu, kritik yoldaki en uzun süreli ve en çok gecikme üreten maddedir. Bölüm 
 - [ ] Protokoldeki boşlukları doldurun: seed, tarih, kodlayıcı adları.
 - [ ] Ek C'deki arama dizesini son kez okuyun. Terim eklemek için son fırsat.
 - [ ] `git add -A && git commit && git push`
-- [ ] `git tag -a protocol-frozen -m "Protocol frozen before coding"` ve `git push origin protocol-frozen`
+- [ ] `git tag -a v1.0-protocol-frozen -m "Protocol frozen before coding"` ve `git push origin v1.0-protocol-frozen`
 - [ ] GitHub'da bu etiketten **release** yayımlayın. Yalnızca tag yeterli değildir; Zenodo release'i dinler.
 - [ ] Zenodo release'i arşivlesin ve DOI üretsin. **DOI gelmeden protokol dondurulmuş sayılmaz** (protokol §15).
-- [ ] `git rev-parse protocol-frozen^{commit}` ile tam SHA'yı alın.
+- [ ] `git rev-parse v1.0-protocol-frozen^{commit}` ile tam SHA'yı alın.
 - [ ] SHA'yı, etiket tarihini ve DOI'yi dört yere yazın: protokol §1, makale 5.1, `Change_Log` ilk satırı, README.
 - [ ] Bundan sonra her değişiklik yeni bir commit ve `Change_Log` satırıdır. Geçmiş yeniden yazılmaz.
 

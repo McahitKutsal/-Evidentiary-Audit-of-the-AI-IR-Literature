@@ -2,12 +2,13 @@
 
 **Status:** Draft for deposit. Once deposited, this document is frozen (Manifesto §9). Any later change is logged in the Change Log with date and reason, and reported in the article's method section.
 
-**Deposit target:** Public Git repository, <https://github.com/McahitKutsal/-Evidentiary-Audit-of-the-AI-IR-Literature>
-**Freeze commit:** [ ] (full 40-character SHA of the commit carrying the `protocol-frozen` tag)
-**Freeze date:** [ ] (tagger date of `protocol-frozen`, UTC)
-**Archive DOI:** [ ] (Zenodo DOI minted from the tagged release; see §15)
+**Deposit target:** Public Git repository, <https://github.com/McahitKutsal/-Evidentiary-Audit-of-the-AI-IR-Literature>, archived to Zenodo.
 
-The deposit mechanism and its evidentiary limits are stated in §15. That section is part of the protocol and is reported in the article's method section.
+**Deposit v1, pre-freeze snapshot.** Tag `protocol-freeze`, commit `f50707436317a533fe9fa9a9a5f9e68213671e0b`, deposited 10 September 2026, DOI [10.5281/zenodo.22696658](https://doi.org/10.5281/zenodo.22696658). This deposit is a dated public snapshot of the materials. It is **not** the freeze: at that commit the sampling seed in §6 was unfilled and the codebook decisions listed in §16 were still open. It is recorded here because it exists, is public, and is citable, and because omitting it would misrepresent the deposit history.
+
+**Deposit v2, the freeze.** Tag `v1.0-protocol-frozen`, commit [ ], deposited [ ], DOI [ ]. This is the deposit the article cites as the pre-registration. It is made only when every item in §16 is closed.
+
+The distinction between the two deposits is stated in §15, along with the mechanism and its evidentiary limits, and is reported in the article's method section. No claim of pre-registration is attached to v1.
 
 ---
 
@@ -134,7 +135,11 @@ The protocol is deposited as a file in a public Git repository rather than in a 
 
 **What is deposited.** This protocol, the coding workbook, the analysis script, and the article draft are committed to <https://github.com/McahitKutsal/-Evidentiary-Audit-of-the-AI-IR-Literature>. The repository is public from the first commit.
 
-**The freeze event.** The protocol is frozen by an annotated Git tag named `protocol-frozen` applied to a specific commit. The tag carries a tagger date. From that tag onward, every change to this document is made in a later commit and logged in §14 with date and reason. The frozen text remains permanently retrievable at the tagged commit.
+**The freeze event.** The protocol is frozen by an annotated Git tag named `v1.0-protocol-frozen` applied to a specific commit, published as a GitHub release and archived to Zenodo. From that tag onward, every change to this document is made in a later commit and logged in §14 with date and reason. The frozen text remains permanently retrievable at the tagged commit.
+
+**Two deposits, and why.** An earlier deposit, tagged `protocol-freeze` and archived under DOI 10.5281/zenodo.22696658 on 10 September 2026, was made before the codebook decisions in §16 were settled and before the sampling seed in §6 was chosen. It is a dated public snapshot and nothing more. Presenting it as a pre-registration would assert that the design was fixed when it was not, which is the exact failure this article was written to measure. It is therefore recorded as v1 and superseded. Zenodo's versioning keeps both deposits under one concept DOI, so the supersession is visible rather than concealed; the earlier record is not deleted, and the article cites v2.
+
+**Tag form.** The v1 tag was created as a lightweight tag and so carries no tagger date of its own. The authoritative timestamp for that deposit is the Zenodo publication date. The v2 tag is annotated, so that the freeze carries a date in the repository as well as in the archive.
 
 **What this establishes.** Git commits are content-addressed: the commit SHA is a cryptographic hash over the tree, the parent commit, the author and committer identities, and the timestamps. Any alteration to the protocol text at or before the freeze commit produces a different SHA and therefore breaks every descendant commit. Once the freeze SHA is published in the article, in the coding workbook change log, and in the Zenodo archive, an undetected substitution of the frozen text is not feasible.
 
@@ -147,3 +152,21 @@ The protocol is deposited as a file in a public Git repository rather than in a 
 **Branch protection.** Force-pushing to the default branch is disabled for the lifetime of the project. This is a repository setting, not a claim in this document, and a reader who wishes to verify the freeze should rely on the Zenodo DOI rather than on the branch setting.
 
 **Reporting.** The article's method section states the freeze mechanism, the freeze SHA, the tag date, and the Zenodo DOI, and states plainly that the deposit is a public repository archived to Zenodo rather than a registry entry. No claim of registry registration is made anywhere in the article.
+
+---
+
+## 16. Conditions for the freeze
+
+The protocol is not frozen until every item below is closed. Each is recorded in §14 when it is settled. This section exists so that the gate is part of the pre-registered document rather than an external checklist.
+
+| # | Item | Status |
+|---|---|---|
+| 1 | Boundary rule between W6 (expert judgment) and W3 citing journalism, with two worked examples in the codebook | open |
+| 2 | Decision tree for the P1/P4 boundary, stating whether framework or agenda language alone places an article in P4 | open |
+| 3 | Sampling seed for §6, chosen and recorded before any sample is drawn | open |
+| 4 | Licence for text, data and code | closed 2026-09-10: CC BY 4.0 for text, protocol, codebook and data; MIT for the analysis script. Recorded in LICENSE. |
+| 5 | Coder names recorded in §9 | open |
+| 6 | Whether the §6 stratified sample is capped at 400 or at a lower figure, given the coding burden costed in the execution checklist | open |
+| 7 | Confirmation that both Web of Science Core Collection and Scopus are accessible, with export rights; if only one is available, §3, §5 and the PRISMA appendix are rewritten before the freeze | open |
+
+Items 1, 2 and 3 bear directly on results: the first two on coder agreement, the third on which articles enter the sample. Item 6 determines whether the study is completable at all. None of them can be settled after coding begins without the change being a departure from the pre-registration rather than a part of it.
